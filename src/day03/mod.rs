@@ -17,10 +17,10 @@ pub fn part1(stdin: Stdin) {
 
         let mut half1_set = HashSet::new();
 
-        for &c in half1.as_bytes() {
+        for c in half1.bytes() {
             half1_set.insert(c);
         }
-        for &c in half2.as_bytes() {
+        for c in half2.bytes() {
             if half1_set.contains(&c) {
                 total += get_value(c);
                 break;
@@ -40,15 +40,15 @@ pub fn part2(stdin: Stdin) {
     for line in stdin.lock().lines() {
         let content = line.expect("Failed to read input");
         if count == 0 {
-            for &c in content.as_bytes() {
+            for c in content.bytes() {
                 set1.insert(c);
             }
         } else if count == 1 {
-            for &c in content.as_bytes() {
+            for c in content.bytes() {
                 set2.insert(c);
             }
         } else {
-            for &c in content.as_bytes() {
+            for c in content.bytes() {
                 if set1.contains(&c) && set2.contains(&c) {
                     total += get_value(c);
                     break;
