@@ -14,7 +14,7 @@ pub fn part1(stdin: Stdin) {
     }
 
     for line in stdin.lock().lines() {
-        let content = line.expect("Failed tZo read input");
+        let content = line.expect("Failed to read input");
         let parts = content.split(' ').collect::<Vec<&str>>();
 
         match parts[0] {

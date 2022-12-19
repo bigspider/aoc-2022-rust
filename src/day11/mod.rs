@@ -142,8 +142,6 @@ pub fn part2(stdin: Stdin) {
         modulus = lcm(modulus, m.test_divisor);
     }
 
-    println!("Modulus: {}", modulus);
-
     let mut n_inspected = vec![0 as usize; monkeys.len()];
 
     for _ in 0..10000 {
