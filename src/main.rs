@@ -1,4 +1,5 @@
 #![allow(dead_code)]
+#![allow(non_snake_case)]
 
 use std::io;
 
@@ -13,10 +14,15 @@ mod day08;
 mod day09;
 mod day10;
 mod day11;
+mod day12;
+mod day13;
+mod day14;
+mod day15;
+mod day16;
 
 
 fn main() {
     let stdin = io::stdin();
-    // day11::part1(stdin);
-    day11::part2(stdin);
+    // day16::part1(stdin);
+    day16::part2(stdin);
 }
