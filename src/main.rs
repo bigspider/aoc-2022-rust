@@ -22,10 +22,11 @@ mod day16;
 mod day17;
 mod day18;
 mod day19;
+mod day20;
 
 
 fn main() {
     let stdin = io::stdin();
-    // day19::part1(stdin);
-    day19::part2(stdin);
+    // day20::part1(stdin);
+    day20::part2(stdin);
 }
